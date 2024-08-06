@@ -1,35 +1,3 @@
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  font-family: Arial, sans-serif;
-}
-
-.section {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.section-one {
-  background-color: #ffcccb;
-}
-
-.section-two {
-  background-color: #add8e6;
-}
-
-.section-three {
-  background-color: #90ee90;
-}
-
-.section-four {
-  background-color: #f0e68c;
-}
-
 .navbar {
   background-color: rgb(49,82,112);
   padding: 20px 10px;
@@ -68,4 +36,3 @@ body, html {
   top: 0;
   z-index: 1030;
 }
-

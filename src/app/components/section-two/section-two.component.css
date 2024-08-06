@@ -1,0 +1,54 @@
+.section-two {
+  height: 100vh;
+  position: relative;
+  background-color: #bc382e;
+  display: flex;
+  align-items: center; 
+}
+
+.notepad-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  height: 100%;
+  margin: 0px;
+}
+
+.section-two .content {
+  padding-left: 150px;
+  width: 50%; 
+}
+
+.section-two h1 {
+  font-size: 4rem; 
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+.section-two p {
+  font-size: 1.8rem; 
+  color: #fff;
+  margin-bottom: 40px; 
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .section-two .content {
+    padding-left: 20px;
+  }
+
+  .section-two p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-two h1 {
+    font-size: 2.5rem;
+  }
+
+  .section-two p {
+    font-size: 1.2rem;
+  }
+}

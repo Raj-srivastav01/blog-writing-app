@@ -1,0 +1,137 @@
+@keyframes colorDrop {
+  0% { background-color: rgb(129, 190, 247); }
+  33% { background-color: rgb(217, 59, 1); }
+  66% { background-color: rgb(232, 182, 44); }
+  100% { background-color: rgb(129, 190, 247); }
+}
+
+@keyframes fade {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  40% { opacity: 1; }
+  60% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.section-one {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  animation: colorDrop 12s infinite;
+  padding: 20px;
+}
+
+.text-container {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  margin-top: -30%; /* Adjust as needed */
+}
+
+.text-container h1 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.text-container h2 {
+  color: white;
+  font-family: monospace;
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.create-button {
+  background-color: lightgreen;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+  z-index: 2;
+}
+
+.create-button:hover {
+  background-color: #4caf50;
+}
+
+.image-slider {
+  position: absolute;
+  top: 60%; /* Adjust as needed */
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.image-slider img {
+  width: 600px; /* Adjust size as needed */
+  position: absolute;
+  opacity: 0;
+  animation: fade 12s infinite;
+  
+}
+
+.image-slider img:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.image-slider img:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.image-slider img:nth-child(3) {
+  animation-delay: 8s;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .text-container h1 {
+    font-size: 2rem;
+  }
+
+  .text-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .create-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .image-slider img {
+    width: 70%; /* Adjust size as needed for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .text-container {
+    top: -90%; /* Adjust as needed */
+  }
+
+  .text-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .text-container h2 {
+    font-size: 1rem;
+  }
+
+  .create-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .image-slider img {
+    width: 200px; /* Adjust size as needed for smaller screens */
+  }
+}

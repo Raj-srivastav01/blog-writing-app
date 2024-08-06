@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'blog-writing-app';
+  showLoginModal = false;
+  showRegisterModal = false;
+
+  showLogin(): void {
+    this.showLoginModal = true;
+    this.showRegisterModal = false;
+  }
+
+  showRegister(): void {
+    this.showRegisterModal = true;
+    this.showLoginModal = false;
+  }
 }

@@ -1,0 +1,44 @@
+.section-three {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-image: url('../../../assets/bg.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.section-three h1 {
+  font-size: 2.5rem; 
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.section-three p {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 20px;
+  width: 30%; 
+  line-height: 1.6; 
+  max-width: 800px; 
+  margin: 0 auto; 
+}
+
+.create-blog-button {
+  background-color: #1d2b34;
+  color: #fff; 
+  border: none;
+  border-radius: 25px; 
+  padding: 15px 30px; 
+  font-size: 1.2rem; 
+  cursor: pointer;
+  transition: background-color 0.3s ease; margin-top: 40px;
+}
+
+.create-blog-button:hover {
+  background-color: #162028; 
+}
