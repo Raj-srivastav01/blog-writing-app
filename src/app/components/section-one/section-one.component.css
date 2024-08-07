@@ -116,10 +116,10 @@
   }
 }
 
-/* @media (max-width: 480px) {
+ @media (max-width: 480px) {
  
 
-  .text-container h1 {
+  /*.text-container h1 {
     font-size: 1.5rem;
   }
 
@@ -132,12 +132,13 @@
     font-size: 0.9rem;
   }
 
-  .image-slider {
-    top: calc(60% + 20px);
+ 
+  }*/
+    .image-slider {
+    top: calc(60% + 40px);
   }
 
   .image-slider img {
     width: 200px; 
-  }
 }
- */
+ 
