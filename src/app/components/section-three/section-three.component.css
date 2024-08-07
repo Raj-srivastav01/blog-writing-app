@@ -8,8 +8,9 @@
   text-align: center;
   padding: 20px;
   background-image: url('../../../assets/bg.jpeg');
-  background-size: cover;
+  background-size: cover; /* Ensure image covers the section */
   background-position: center;
+  background-repeat: no-repeat; /* Prevent image repetition */
 }
 
 .section-three h1 {
@@ -36,9 +37,57 @@
   padding: 15px 30px; 
   font-size: 1.2rem; 
   cursor: pointer;
-  transition: background-color 0.3s ease; margin-top: 40px;
+  transition: background-color 0.3s ease;
+  margin-top: 40px;
 }
 
 .create-blog-button:hover {
   background-color: #162028; 
+}
+
+@media (max-width: 768px) {
+  .section-three {
+    padding: 20px;
+    background-size: cover; /* Adjust background size */
+    background-position: center;
+  }
+
+  .section-three h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .section-three p {
+    font-size: 1rem;
+    width: 80%; 
+    margin-bottom: 15px;
+  }
+
+  .create-blog-button {
+    padding: 12px 25px; 
+    font-size: 1rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .section-three {
+    padding: 10px;
+    background-size: cover; /* Ensure full coverage */
+  }
+
+  .section-three h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .section-three p {
+    font-size: 0.9rem;
+    width: 90%; 
+    margin-bottom: 10px;
+  }
+
+  .create-blog-button {
+    padding: 10px 20px; 
+    font-size: 0.9rem; 
+  }
 }
