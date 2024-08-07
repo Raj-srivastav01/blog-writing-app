@@ -70,11 +70,24 @@
     padding-bottom: 20px;
   }
 
+   .section-two .content {
+    padding-left: 20px;
+    width: 50%; 
+  }
+
   .section-two h1 {
-    font-size: 2.5rem;
+    font-size: 2rem; 
+    color: #fff;
+    margin-bottom: 50px;
   }
 
   .section-two p {
-    font-size: 1.2rem;
+    font-size: 1.3rem; 
+    color: #fff;
+    margin-bottom: 40px; 
+    line-height: 1.6;
+    width: 70%;
+    height: 30%;
   }
+ 
 }
