@@ -76,16 +76,16 @@
   }
 
   .section-two h1 {
-    font-size: 2rem; 
+    font-size: 1rem; 
     color: #fff;
     margin-bottom: 50px;
   }
 
   .section-two p {
-    font-size: 1.3rem; 
+    font-size: 0.7rem; 
     color: #fff;
     margin-bottom: 40px; 
-    line-height: 1.6;
+    line-height: 1.5;
     width: 70%;
     height: 30%;
   }
