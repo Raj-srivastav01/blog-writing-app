@@ -135,7 +135,7 @@
  
   }*/
     .image-slider {
-    top: calc(60% + 40px);
+    top: calc(60% + 10px);
   }
 
   .image-slider img {
