@@ -135,7 +135,7 @@
  
   }*/
     .image-slider {
-    top: calc(60% + 10px);
+    margin-top: 70%;
   }
 
   .image-slider img {
